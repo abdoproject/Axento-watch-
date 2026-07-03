@@ -655,7 +655,7 @@
     </div>
     <div class="cart-items" id="cartItems"></div>
     <div class="cart-foot">
-      <div class="cart-total-row"><span>الإجمالي</span><b id="cartTotal">$0</b></div>
+      <div class="cart-total-row"><span>الإجمالي</span><b id="cartTotal">د.م0</b></div>
       <button class="btn btn-primary btn-block" id="checkoutBtn">إتمام الطلب</button>
     </div>
   </div>
@@ -727,7 +727,7 @@
   var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* ---------------- HELPERS ---------------- */
-  function fmt(n){ return "$" + n.toLocaleString("en-US"); }
+  function fmt(n){ return "" + n.toLocaleString("en-US"); }
   function getProduct(id){ return products.find(function(p){ return p.id === id; }); }
   function starIcon(){ return '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.7 7-6.3-3.9L5.7 21l1.7-7-5.4-4.7 7.1-.6z"/></svg>'; }
 
